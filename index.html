@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevonsRobloxShop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+
+        #header{
+            width: 100%;
+            height: 150px;
+            background-color: #f4efea;
+            display: flex;
+            text-align: center;
+        }
+
+        #logoDiv{
+            width: 30%;
+            height: 100%;
+        }
+
+        img{
+            height: 100%;
+        }
+
+        #sloganDiv{
+            width: 32.5%;
+            margin-top: 25px;
+        }
+
+        #sloganDiv p{
+            color: #8ab140;
+            font-size: 20px;
+        }
+
+        #linksDiv{
+            width: 32.5%;
+            margin-top: 30px;
+        }
+
+        #p1{
+            color: #a7703e;
+            font-size: 20px;
+        }
+
+        #p2{
+            color: #5298c5;
+            font-size: 20px;
+        }
+
+        #mainDiv{
+            text-align: center;
+        }
+
+        #mainDiv h1{
+            margin-top: 50px;
+        }
+
+        #row{
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: 200px;
+            justify-content: space-around;
+            margin-top: 100px;
+        }
+
+        .itemDiv img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid black;
+        }
+
+        .sec2{
+            margin-top: 150px;
+        }
+
+        .sec3{
+            margin-top: 150px;
+        }
+
+        #final{
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer{
+            width: 100%;
+            height: 30px;
+            padding: 3px;
+            background-color: #f4efea;
+            display: flex;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer p{
+            width: 50%;
+        }
+
+        footer a{
+            width: 50%;
+        }
+
+        @media screen and (max-width: 768px) {
+        #header {
+            flex-direction: column;
+            height: auto;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logoDiv {
+            order: 1;
+            width: 60%;
+            height: auto;
+            text-align: center;
+        }
+
+        #logoDiv img {
+            max-width: 80%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        #sloganDiv {
+            order: 2;
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #linksDiv {
+            order: 3;
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        #sloganDiv p, #p1, #p2 {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        #row {
+            grid-template-columns: 45% 45%;
+            grid-template-rows: auto;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .itemDiv img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+        }
+
+        footer p, footer a {
+            width: 100%;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        }
+
+
+
+    </style>
+</head>
+    <body>
+        
+        <div id="header">
+            <div id="sloganDiv"><p>I sell “Steal a Brainrot “ and<br/>  “Grow a Garden” pets, brainrots, fruits,<br/> and other items!</p></div>
+            <div id="logoDiv"><img src="./images/levonsRobloxShopLogo.PNG" alt="logo"/></div>
+            <div id="linksDiv">
+                <a id="p1" href="#stealABrainrotShop"><p>Click here to go to “Steal a Brainrot” shop.</p></a>
+                <a id="p2" href="#growAGardenShop"><p>Click here to go to “Grow a Garden” shop.</p></a>
+            </div>
+        </div>
+
+        <div id="mainDiv">
+            <div id="popularItems" class="sec1">
+                <h1>POPULAR ITEMS</h1>
+                <div id="row">
+                    <div class="itemDiv">
+                        <img class="item" src="./images/goldenLab.JPG" alt="item"/>
+                        <h6 class="game">"Grow a Garden"</h6>
+                        <h6 class="itemName">Golden Lab</h6>
+                        <h6 class="price">$0.10</h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/raccoon.JPG" alt="item"/>
+                        <h6 class="game">"Grow a Garden"</h6>
+                        <h6 class="itemName">Raccoon</h6>
+                        <h6 class="price">$9</h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/shibaInu.JPG" alt="item"/>
+                        <h6 class="game">"Grow a Garden"</h6>
+                        <h6 class="itemName">Shiba Inu</h6>
+                        <h6 class="price">$2</h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/laVacaSaturnita.WEBP" alt="item"/>
+                        <h6 class="game">"Steal a Brainrot"</h6>
+                        <h6 class="itemName">La Vaca Saturnita</h6>
+                        <h6 class="price">$5</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div id="stealABrainrotShop" class="sec2">
+                <h1>Steal a Brainrot<br/> shop</h1>
+                <div id="row">
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                </div>
+                <div id="row">
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                </div>
+            </div>
+
+            <div id="growAGardenShop" class="sec3">
+                <h1>Grow a Garden<br/> shop</h1>
+                <div id="row">
+                    <div class="itemDiv">
+                        <img class="item" src="./images/tanuki.JPG" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName">Tanuki</h6>
+                        <h6 class="price">$1</h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                </div>
+                <div id="row">
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                    <div class="itemDiv">
+                        <img class="item" src="./images/comingSoon.png" alt="item"/>
+                        <h6 class="game"></h6>
+                        <h6 class="itemName"></h6>
+                        <h6 class="price"></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="final">
+            <a href="./pages/contact.html"><h1>I'm ready to buy!</h1></a>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Levons Roblox Shop</p>
+            <a href="./pages/contact.html">Contact Me</a>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </body>
+</html>
